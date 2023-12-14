@@ -1,6 +1,6 @@
+import 'package:booking_services/helpers/notifier_provider_list.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
-
 import 'package:booking_services/views/book/overview.dart';
 
 void main() {
@@ -12,13 +12,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+    return NotifierProviderList(
+      child: MaterialApp(
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+          useMaterial3: true,
+        ),
+        home: const Overview(),
       ),
-      home: const Overview(),
     );
   }
 }
