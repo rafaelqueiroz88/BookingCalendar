@@ -16,9 +16,7 @@ class Event extends StatelessWidget {
     return ListTile(
       title: Text(title),
       subtitle: Text(id),
-      leading: Icon(
-        isPaid ? Icons.paid : Icons.paid_outlined,
-      ),
+      leading: Icon(isPaid ? Icons.paid : Icons.paid_outlined),
     );
   }
 }

@@ -1,7 +1,6 @@
 import 'package:booking_services/helpers/notifier_provider_list.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
-
 import 'package:booking_services/views/book/overview.dart';
 
 void main() {
